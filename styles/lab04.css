@@ -1,0 +1,149 @@
+/*
+filename: lab04.css
+author: Nguyen Bao Thien Phuc
+created: 02/10/2025
+last modified: 02/10/2025
+description: Styling for lab04.html
+*/
+
+/* ---------- Universal Selector ---------- */
+* {
+    font-family: calibri, sans-serif;
+    color: #2F4F4F;
+}
+
+/* ---------- Headings ---------- */
+h1 {
+    color: purple;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    color: rgb(0,128,128);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    font-family: arial, sans-serif;
+}
+
+/* ---------- Aside & Footer ---------- */
+aside, footer {
+    font-style: italic;
+}
+
+/* ---------- Table Styling ---------- */
+table, th, td {
+    border: 3px double black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.4em;
+}
+
+/* Right-align column headers */
+.right-align {
+    text-align: right;
+}
+
+/* ---------- ID Selectors ---------- */
+#images {
+    text-align: center;
+}
+
+/* Apply to Headings */
+#headings-sub {
+    color: red;
+}
+
+/* ---------- Class Selectors ---------- */
+.special {
+    color: darkorange;
+    font-weight: bold;
+}
+
+/* ---------- Navigation Menu ---------- */
+nav a {
+    text-decoration: none;
+    padding: 0.2em 0.6em;
+    border: 4px solid #ccc;
+    margin-right: 0.3em;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: lightblue;
+    border-color: darkblue;
+}
+
+/* ---------- Lists ---------- */
+ol ul {
+    list-style-type: square;
+}
+
+/* ---------- Pseudo-classes ---------- */
+aside:hover {
+    display: none;
+}
+
+/* ---------- Images ---------- */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+}
+
+/* Half-width image */
+.half-image {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Separator below image with spacing (approx 2-3 lines) */
+.image-separator {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Page number aligned to bottom-right under separator */
+.page-number {
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 1.5em; 
+}
+
+/* ---------- Vertical Left Line Segments ---------- */
+.vline-left {
+    border-left: 4px solid #ADD8E6;
+    padding-left: 1.2em;          
+    margin-left: 6ch;            
+    overflow: hidden;        
+}
+
+/* Make the blue line stop exactly at the image bottom */
+.vline-left a:last-child { display: block; }
+.vline-left a:last-child img { margin-bottom: 0; }
+
+/* Remove vertical gap between header and article wrappers */
+header { margin-bottom: 0; }
+article { margin-top: 0; }
+
+/* Match text indent to vline-left without drawing the line */
+.align-with-vline {
+    margin-left: calc(6ch + 1.2em + 4px);
+}
+
+/* Black horizontal line above Page 5 */
+.page-separator {
+    border: 0;
+    border-top: 2px solid #000;
+    margin: 5.5em 0 0.5em; 
+}
